@@ -13,7 +13,7 @@ class BaseOptions():
     def initialize(self, parser):
         # base define
         parser.add_argument('--name', type=str, default='network_paris', help='name of the experiment.')
-        parser.add_argument('--model', type=str, default='tformer', help='name of the model type. [tformer]')
+        parser.add_argument('--model', type=str, default='dwtnet', help='name of the model type. [dwtnet]')
         parser.add_argument('--mask_type', type=int, default=[2,4],
                             help='mask type, 0: center mask, 1:random regular mask, '
                             '2: random irregular mask from plc (cvpr 2019). 3: external irregular mask. 4: irregular mask from plc (iccv 2019) [0],[1,2],[2,3]')
